@@ -1329,6 +1329,7 @@ input[type='checkbox'] {
 .counter #counter .counter-info {
 	margin-bottom: 0;
 	color: #fff;
+	margin-top: 3%;
 	font: 400 0.875rem/1.25rem "Open Sans", sans-serif;
 	vertical-align: middle;
 }
