@@ -302,7 +302,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             pformError();
-            psubmitMSG(false, "Please fill all fields!");
+            psubmitMSG(false, "Completați câmpul!");
         } else {
             // everything looks good!
             event.preventDefault();
