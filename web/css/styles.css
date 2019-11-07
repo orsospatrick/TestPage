@@ -181,17 +181,17 @@ a.white {
 .btn-outline-reg {
 	display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid cadetblue;
+	border: 0.125rem solid #00cccc;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: cadetblue;
+	color: #00cccc;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 .btn-outline-reg:hover {
-	background-color: cadetblue;
+	background-color: #00cccc;
 	color: #fff;
 	text-decoration: none;
 }
@@ -386,7 +386,7 @@ input[type='checkbox'] {
 
 .form-control-submit-button:hover {
 	background-color: transparent;
-	color: cadetblue;
+	color: #00cccc;
 }
 
 /* Form Success And Error Message Formatting */
@@ -671,7 +671,7 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: cadetblue;
+	color: #00cccc;
 }
 
 /* Dropdown Menu */
@@ -1448,7 +1448,7 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: cadetblue url("../images/up-arrow.png") no-repeat center 47%;
+	background: #00cccc url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
@@ -1574,7 +1574,7 @@ a:hover.back-to-top {
 	
 	.navbar-custom .nav-item .nav-link:hover,
 	.navbar-custom .nav-item .nav-link.active {
-		color: cadetblue;
+		color: #00cccc;
 	}
 
 	.navbar-custom.top-nav-collapse {
