@@ -154,7 +154,6 @@ a.white {
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
 	border: 0.125rem solid cadetblue;
 	border-radius: 2rem;
-	background-color: cadetblue;
 	color: #fff;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
@@ -780,7 +779,7 @@ input[type='checkbox'] {
 }
 
 .header #js-rotating {
-	color: cadetblue;
+	color: #00cccc;
 }
 
 .header .p-large {
@@ -1308,7 +1307,7 @@ input[type='checkbox'] {
 .counter {
 	padding-top: 6.5rem;
 	padding-bottom: 5.375rem;
-	background-color: #262431;
+	background-color: #413d52;
 	text-align: center;
 }
 
@@ -1361,7 +1360,7 @@ input[type='checkbox'] {
 .form .list-unstyled .fab {
 	margin-right: 0.5rem;
 	font-size: 0.875rem;
-	color:cadetblue;
+	color:#00cccc;
 }
 
 .form .list-unstyled .fa-phone {
@@ -1593,7 +1592,7 @@ a:hover.back-to-top {
 	
 	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
 	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-		color: cadetblue;
+		color: #00cccc;
 	}
 
 	.navbar-custom .dropdown-menu {
