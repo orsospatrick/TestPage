@@ -24,7 +24,10 @@
 	/* Navbar Scripts */
 	// jQuery to collapse the navbar on scroll
     $(window).on('scroll load', function() {
-	
+        if ($(".navbar").offset().top > 20) {
+            $('.navbar').fadeIn();
+        }
+
     });
 
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
