@@ -134,9 +134,9 @@ a.white {
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid cadetblue;
+	border: 0.125rem solid  #ffffff;
 	border-radius: 2rem;
-	background-color: cadetblue;
+	background-color: #ffffff;
 	color: #fff;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
@@ -152,7 +152,7 @@ a.white {
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid cadetblue;
+	border: 0.125rem solid  #ffffff;
 	border-radius: 2rem;
 	color: #fff;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
@@ -162,7 +162,7 @@ a.white {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: cadetblue;
+	color:  #ffffff;
 	text-decoration: none;
 }
 
