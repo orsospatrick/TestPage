@@ -2,6 +2,10 @@
   background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/GoPack faciliteaza transport coletelor si verifica micile firme de transport.jpg");
 }
 
+.listContainer {
+  padding-left: 25%; display: flex; flex-direction: row; align-items: center;
+}
+
 .u-section-1 .u-sheet-1 {
   min-height: 558px;
 }
@@ -100,6 +104,10 @@
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
     min-height: 333px;
+  }
+
+  .listContainer {
+    padding-left: 10%;
   }
 
   .u-section-1 .u-group-1 {
