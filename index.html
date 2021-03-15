@@ -93,12 +93,6 @@
 </header>
 
 <body data-home-page="index.html" data-home-page-title="index" class="u-body">
-  <script type="text/javascript">
-    $('#$vreau-oferta-2').click(function() {
-      console.log('I am here')
-      fbq('cereOferta', 'Purchase');
-    });
-  </script>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPLPFT7" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -162,7 +156,7 @@
                         name="message"></textarea>
                     </div>
                     <div class="u-form-group u-form-submit">
-                      <button id="vreau-oferta-2" type="submit"
+                      <button id="vreau-oferta-2" onclick="fbq('cereOferta', 'Purchase')" type="submit"
                         class="u-btn u-btn-submit u-button-style u-white u-btn-2"
                         style="font-size: 0.95rem; border-radius: 7px;">CERE OFERTĂ</button>
                     </div>
@@ -406,7 +400,7 @@
                             name="message"></textarea>
                         </div>
                         <div class="u-form-group u-form-submit">
-                          <button id="vreau-oferta-2" type="submit"
+                          <button id="vreau-oferta-2" onclick="fbq('cereOferta', 'Purchase')" type="submit"
                             class="u-btn u-btn-submit u-button-style u-white u-btn-2"
                             style="font-size: 0.95rem; border-radius: 7px;">CERE OFERTĂ</button>
                         </div>
