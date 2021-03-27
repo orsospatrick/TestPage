@@ -140,7 +140,7 @@
                   class="u-black u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-shape u-shape-rectangle u-shape-1">
                 </div>
                 <div class="u-form u-form-1">
-                  <form action="https://formspree.io/f/gopackcontact@gmail.com" method="POST">
+                  <form name="FirstForm" onsubmit="return validateForm1()" action="https://formspree.io/f/gopackcontact@gmail.com" method="POST">
                     <!-- hidden inputs for siteId and pageId -->
                     <div class="u-form-group u-form-name">
                       <input style="padding: 7px;color: black;font-size: 0.95rem;width: 100%;" placeholder="Email"
@@ -184,7 +184,7 @@
               <div class="u-container-layout u-container-layout-2">
                 <img style="height: 175px;"
                   src="images/GoPack alegi orasul si tara unde ai nevoie de transport, transportam in Germania,Olanda,Belgia,Anglia si Franta,.png"
-                  alt="Logo GoPack o aplicatie pentru transportul pachetelor si persoanelor cu micile firme de transport">
+                  alt="GoPack o aplicatie pentru transportul pachetelor si persoanelor cu micile firme de transport">
                 <p style="color: black;" class="u-text u-text-2">Completezi formularul, iar noi revenim in maxim 24h cu
                   un transportator pentru ruta ta.</p>
               </div>
@@ -394,7 +394,7 @@
                       class="u-black u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-shape u-shape-rectangle u-shape-1">
                     </div>
                     <div style="margin: -351px auto 50px 18px;" class="u-form u-form-1">
-                      <form action="https://formspree.io/f/gopackcontact@gmail.com" method="POST">
+                      <form name="SecondForm" onsubmit="return validateForm2()" action="https://formspree.io/f/gopackcontact@gmail.com" method="POST">
                         <!-- hidden inputs for siteId and pageId -->
                         <div class="u-form-group u-form-name">
                           <input style="padding: 7px;color: black;font-size: 0.95rem;width: 100%;" placeholder="Email"
@@ -591,5 +591,25 @@
   </footer>
 
 </body>
+<script type="text/javascript">
+  function validateForm2() {
+    var b = document.forms["SecondForm"]["name"].value;
+    var c = document.forms["SecondForm"]["message"].value;
+    if (b == null || b == "", c == null || c == "") {
+      alert("Completați formularul cu numărul de telefon și detalii\n Dacă întămpinați probleme apelați la +40 767 503 706\n Vă mulțumim");
+      return false;
+    }
+  }
+</script>
+<script type="text/javascript">
+  function validateForm1() {
+    var b = document.forms["FirstForm"]["name"].value;
+    var c = document.forms["FirstForm"]["message"].value;
+    if (b == null || b == "", c == null || c == "") {
+      alert("Completați formularul cu numărul de telefon și detalii\n Dacă întămpinați probleme apelați la +40 767 503 706\n Vă muțumim");
+      return false;
+    }
+  }
+</script>
 
 </html>
