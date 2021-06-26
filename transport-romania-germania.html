@@ -130,49 +130,215 @@
                 </div>
             </div>
             <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
-                <div class="u-layout">
-                    <div class="u-layout-row">
-                        <div
-                            class="u-align-center u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
-                            <div class="u-container-layout u-container-layout-2">
-                                <img style="height: 175px;"
-                                    src="images/GoPack alegi orasul si tara unde ai nevoie de transport, transportam in Germania,Olanda,Belgia,Anglia si Franta,.png"
-                                    alt="GoPack o aplicatie pentru transportul pachetelor si persoanelor cu micile firme de transport">
-                                <p style="color: black;" class="u-text u-text-2">Completezi formularul, iar noi revenim
-                                    in maxim 24h cu
-                                    un transportator pentru ruta ta.</p>
+                <div class="u-layout citiesWrapper" style="display: flex; flex-direction: row;">
+                    <div style="display: flex; flex-direction: column; padding-left:18px; padding-right: 18px;" class="u-layout-row">
+                        <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(1)"><li>Munich</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv1">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
                             </div>
                         </div>
-                        <div
-                            class="u-align-center u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
-                            <div class="u-container-layout u-container-layout-2">
-                                <img style="height: 175px;"
-                                    src="images/Am participat la Innovations Labs aplicatie mobila pentru transport.png"
-                                    alt="Innovations Labs aplicatie mobila transport international">
-                                <p style="color: black;" class="u-text u-text-2">Primesti numarul de telefon al
-                                    transportatorului pentru
-                                    a stabili toate detaliile</p>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(2)"><li>Dortmund</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv2">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
                             </div>
                         </div>
-                        <div
-                            class="u-align-center u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
-                            <div class="u-container-layout u-container-layout-2">
-                                <img style="height: 175px;"
-                                    src="images/Transport de persoane si pachete printr-o inovatie a serviciului de intermediere.png"
-                                    alt="Finalisti Changeneers si sponsorizati de Samsung cu aplicatie mobila pentru transportul pachetelor">
-                                <p style="color: black;" class="u-text u-text-2">Tinem legatura cu tine pana la
-                                    sfarsitul transportului
-                                    si ne asiguram ca totul decurge perfect.</p>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(3)"><li>Berlin</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv3">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
                             </div>
                         </div>
-
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(4)"><li>Stuttgart</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv4">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(5)"><li>Frankfurt am Main</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv5">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(6)"><li>Karlsruhe</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv6">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <div style="display: flex; flex-direction: column; padding-left:18px; padding-right: 18px;" class="u-layout-row">
+                        <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(7)"><li>Munich</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv7">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(8)"><li>Dortmund</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv8">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(9)"><li>Berlin</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv9">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(10)"><li>Stuttgart</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv10">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(11)"><li>Frankfurt am Main</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv11">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(12)"><li>Karlsruhe</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv12">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; padding-left:18px; padding-right: 18px;" class="u-layout-row">
+                        <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(13)"><li>Munich</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv13">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(14)"><li>Dortmund</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv14">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(15)"><li>Berlin</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv15">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(16)"><li>Stuttgart</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv16">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(17)"><li>Frankfurt am Main</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv17">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                          <div style="display: flex; flex-direction: column; padding-top: 4px; padding-bottom: 4px;">
+                            <span style="font-weight: bold; cursor: pointer;" onclick="showIntermediateCities(18)"><li>Karlsruhe</li></span>
+                            <div style="display: none;" id="intermediateCitiesDiv18">
+                                <em><span>Oras intermediar 1,</span></em>
+                                <em><span>Oras intermediar 2,</span></em>
+                                <em><span>Oras intermediar 3,</span></em>
+                                <em><span>Oras intermediar 4,</span></em>
+                                <em><span>Oras intermediar 5,</span></em>
+                                <em><span>Oras intermediar 6</span></em>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
-            <div style="width: 100%; display: flex; flex-direction: row; justify-content: center;">
-                <a id="vreau-oferta-1"
-                    style="color:#FFFFFF;background-color: #00cccc;align-self: center; border-radius: 5px; font-weight: bold;"
-                    href="index.html#contact2" class="u-btn u-button-style u-btn-1">VREAU OFERTĂ<a>
             </div>
         </div>
     </section>
@@ -384,3 +550,14 @@
 </body>
 
 </html>
+
+<script>
+    function showIntermediateCities(divNumber) {
+        var x = document.getElementById(`intermediateCitiesDiv${divNumber}`);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>

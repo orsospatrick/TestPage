@@ -838,6 +838,9 @@
 }
 
 @media (max-width: 575px) {
+  .citiesWrapper {
+    flex-wrap: wrap;
+  }
   .u-section-5 .u-group-1 {
     width: 340px;
   }
