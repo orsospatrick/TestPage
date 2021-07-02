@@ -88,7 +88,8 @@
   <link rel="canonical" href="index.html">
 </head>
 <header style="background-color: black; padding: 12px;">
-  <img style="margin-left: 8%;" src="images/favicon.png"
+
+ <img style="margin-left: 8%;" src="images/GoPack-transport-logo.png"
     alt="GoPack platforma pentru transportul pachetelor si persoanelor cu micile firme de transport verificate">
 </header>
 
@@ -126,7 +127,7 @@
 
           <a id="vreau-oferta-1"
             style="color:#FFFFFF;background-color: #00cccc;align-self: center; border-radius: 5px; font-weight: bold;"
-            href="index.html#contactme1" class="u-btn u-button-style u-btn-1">VREAU OFERTĂ<a>
+            href="https://gopack-admin-dashboard.herokuapp.com/" class="u-btn u-button-style u-btn-1">TRIMITE COMANDĂ<a>
         </div>
       </div>
     </div>
@@ -149,36 +150,27 @@
             <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
 
               <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl">
-                <h4 style="padding-left: 17px; margin-bottom: 0px; color:#FFFFFF">Ai nevoie de transport?</h4>
-                <p style="padding-left: 17px; margin-top: 5px; color:#FFFFFF">Lasa-ne cateva detalii si te vom contacta cu o oferta!
+                <h2 style="padding-left: 17px; margin-bottom: 0px; color:#FFFFFF">Vezi starea comenzii tale!</h2>
+                <p style="padding-left: 17px; margin-top: 5px; color:#FFFFFF">Vezi in timp real starea comenzii tale pentru colet,persoane sau masina
                 </p>
                 <div
-                  class="u-black u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-shape u-shape-rectangle u-shape-1">
-                </div>
-                <div class="u-form u-form-1">
-                  <form name="FirstForm" onsubmit="return validateForm1()"
-                    action="https://formspree.io/f/gopackcontact@gmail.com" method="POST">
-                    <!-- hidden inputs for siteId and pageId -->
-                    <div class="u-form-group u-form-name">
-                      <input style="padding: 7px;color: black;font-size: 0.95rem;width: 100%;" placeholder="Email"
-                        name="_replyto">
+                 style="max-height: 30%;" class="u-black u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-shape u-shape-rectangle u-shape-1">
+                      <div style="width: 50%;margin-left: 5%;" class="u-form-group u-form-name">
+                      <input style="padding: 7px;color: black;font-size: 0.95rem;margin-top:5%;width: 150%;" placeholder="ID COMANDA/AWB"
+                        name="_replyto" id="awb" type="number">
                     </div><!-- always visible -->
-                    <div style="margin-top: 2%;" class="u-form-group u-form-phone">
-                      <input style="padding: 7px; color: black; font-size: 0.95rem; width: 100%;" placeholder="Telefon"
-                        name="name">
-                    </div>
-                    <div style="margin-top: 2%;" class="u-form-group u-form-message">
-                      <textarea style="padding: 7px; color: black;font-size: 0.95rem;width: 100%;"
-                        placeholder="Punct plecare,destinatie alte detalii..." rows="4" cols="50"
-                        name="message"></textarea>
-                    </div>
+                  
                     <div class="u-form-group u-form-submit">
-                      <button id="vreau-oferta-2" onClick="fbq('track', 'Purchase');" type="submit"
+                      <button id="vreau-oferta-2" onClick="onClick(this)" type="submit"
                         class="u-btn u-btn-submit u-button-style u-white u-btn-2"
-                        style="font-size: 0.95rem; border-radius: 7px;">CERE OFERTĂ</button>
+                        style="font-size: 0.95rem; border-radius: 7px;margin-left: 5%;">VEZI STAREA COMENZII</button>
                     </div>
-                  </form>
                 </div>
+           
+                    <!-- hidden inputs for siteId and pageId -->
+                
+                  
+                
               </div>
             </div>
           </div>
@@ -426,8 +418,8 @@
                             placeholder="Punct plecare,destinatie alte detalii..." rows="4" cols="50"
                             name="message"></textarea>
                         </div>
-                        <div class="u-form-group u-form-submit">
-                          <button id="vreau-oferta-2" onClick="fbq('track', 'Purchase');" type="submit"
+                        <div class="u-form-group u-form-submit">onClick(this)
+                          <button id="vreau-oferta-2" onClick="" type="submit"
                             class="u-btn u-btn-submit u-button-style u-white u-btn-2"
                             style="font-size: 0.95rem; border-radius: 7px;">CERE OFERTĂ</button>
                         </div>
@@ -638,6 +630,12 @@
       return false;
     }
   }
+  function onClick(elem) {
+    fbq('track', 'Purchase');
+  var $this = elem.tagName;
+  var input = document.getElementById("awb").value;
+  window.location.href = `https://gopack-admin-dashboard.herokuapp.com/${input}`;
+}
 </script>
 
 </html>
