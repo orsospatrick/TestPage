@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;">
+<html style="font-size: 16px; scroll-behavior: smooth; ">
 
 <head>
   <!-- Google Tag Manager -->
@@ -88,9 +88,18 @@
   <link rel="canonical" href="index.html">
 </head>
 <header style="background-color: black; padding: 12px;">
-
- <img style="margin-left: 8%;" src="images/GoPack-transport-logo.png"
-    alt="GoPack platforma pentru transportul pachetelor si persoanelor cu micile firme de transport verificate">
+  <div style="display: flex; flex-direction: row; width: 100%">
+    <div style="flex: 1; display: flex; flex-direction: row; align-items: center;">
+      <img style="margin-left: 8%;" src="images/GoPack-transport-logo.png"
+      alt="GoPack platforma pentru transportul pachetelor si persoanelor cu micile firme de transport verificate">
+      <span style="color: white; padding-left: 12px; font-size: 20px; font-weight: bold;">GoPack</span>
+    </div>
+    <div style="display: flex; flex-direction: row; flex: 1; align-items: center; color: white; justify-content: flex-end; padding-right: 8%;">
+      <span onclick="scrollToElementById('contact2')" style="cursor: pointer; color: white; font-size: 20px; font-weight: bold;">Preturi</span>
+       &nbsp;-&nbsp; <span onclick="openInNewTab('https://gopack-admin-dashboard.herokuapp.com/')" style="cursor: pointer; color: white; font-size: 20px; font-weight: bold;">Urmarire comanda</span>
+       &nbsp;-&nbsp; <span style="cursor: pointer; color: white; font-size: 20px; font-weight: bold;">+40767503706</span></span>
+    </div>
+  </div>
 </header>
 
 <body data-home-page="index.html" data-home-page-title="index" class="u-body">
@@ -619,6 +628,15 @@
   var $this = elem.tagName;
   var input = document.getElementById("awb").value;
   window.location.href = `https://gopack-admin-dashboard.herokuapp.com/${input}`;
+}
+function scrollToElementById(elemId) {
+  var foundElement = document.getElementById(elemId)
+  if (foundElement) {
+    foundElement.scrollIntoView();
+  }
+}
+function openInNewTab(url) {
+  window.open(url, '_blank').focus();
 }
 </script>
 
