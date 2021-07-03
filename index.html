@@ -181,7 +181,7 @@
                   class="u-black u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-shape u-shape-rectangle u-shape-1">
                   <div style="width: 50%;margin-left: 5%;" class="u-form-group u-form-name">
                     <input style="padding: 7px;color: black;font-size: 0.95rem;margin-top:5%;width: 150%;"
-                      placeholder="ID COMANDA/AWB" name="_replyto" id="awb" type="number">
+                      placeholder="ID COMANDA/AWB" name="_replyto" id="awb_input" type="number">
                   </div><!-- always visible -->
 
                   <div class="u-form-group u-form-submit">
@@ -664,7 +664,7 @@
   function onClick(elem) {
     fbq('track', 'Purchase');
     var $this = elem.tagName;
-    var input = document.getElementById("awb").value;
+    var input = document.getElementById("awb_input").value;
     window.location.href = `https://gopack-admin-dashboard.herokuapp.com/${input}`;
   }
   function scrollToElementById(elemId) {
