@@ -17340,6 +17340,13 @@ p {
 .u-social-icons {
   display: flex;
 }
+
+@media (max-width: 575px) {
+  .u-social-icons {
+    margin-left: 285px;
+  }
+}
+
 .u-social-url {
   color: inherit;
   font-size: inherit;
