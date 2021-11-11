@@ -17343,7 +17343,7 @@ p {
 
 @media (max-width: 575px) {
   .u-social-icons {
-    margin-left: 285px;
+    margin-left: 285px !important;
   }
 }
 
