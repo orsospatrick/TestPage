@@ -105,8 +105,12 @@
       'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '511118766222204');
     fbq('track', 'PageView');
-    fbq('trackCustom', 'PlaseazaComanda')
-    fbq('trackCustom', 'VizionarePreturi')
+    // fbq('track', 'Purchase', {
+    //   value: 1,
+    //   currency: 'EUR'
+    // })
+    // fbq('trackCustom', 'PlaseazaComanda')
+    // fbq('trackCustom', 'VizionarePreturi')
   </script>
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=669764177334838&ev=PageView&noscript=1" /></noscript>
@@ -696,6 +700,10 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
   <script type="text/javascript">
     // Code for Facebook Pixel
     function plaseazaComanda() {
+      fbq('track', 'Purchase', {
+        value: 1,
+        currency: 'EUR'
+      })
       fbq('trackCustom', 'PlaseazaComanda');
     }
 
@@ -704,14 +712,26 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
     }
 
     function plaseazaComandaColet() {
+      fbq('track', 'Purchase', {
+        value: 1,
+        currency: 'EUR'
+      })
       fbq('trackCustom', 'PlaseazaComandaColet');
     }
 
     function plaseazaComandaCalator() {
+      fbq('track', 'Purchase', {
+        value: 1,
+        currency: 'EUR'
+      })
       fbq('trackCustom', 'PlaseazaComandaCalator');
     }
 
     function plaseazaComandaMasina() {
+      fbq('track', 'Purchase', {
+        value: 1,
+        currency: 'EUR'
+      })
       fbq('trackCustom', 'PlaseazaComandaMasina');
     }
   </script>
