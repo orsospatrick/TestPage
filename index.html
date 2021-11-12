@@ -95,7 +95,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -103,8 +103,10 @@
       s.parentNode.insertBefore(t, s)
     }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '669764177334838');
+    fbq('init', '511118766222204');
     fbq('track', 'PageView');
+    fbq('trackCustom', 'PlaseazaComanda')
+    fbq('trackCustom', 'VizionarePreturi')
   </script>
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=669764177334838&ev=PageView&noscript=1" /></noscript>
@@ -233,7 +235,7 @@
                 indiferent de distanță și locație prin bucuria de a trimite, bucuria de a primi pachete sau de a
                 calatorii!
               </p>
-              <a onclick="scrollToElementById('preturi-1');"
+              <a onclick="scrollToElementById('preturi-1');vizionarePreturi();"
                 class="u-active-white u-border-none u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom-color-1 u-hover-white u-radius-11 u-text-active-white u-text-body-alt-color u-text-hover-custom-color-1 u-btn-1">VEZI
                 PRETURI</a>
             </div>
@@ -356,6 +358,7 @@
               <p class="u-align-center u-text u-text-palette-5-dark-2 u-text-5"> Pentru colete peste 30 kg - 1.3 € / kg.
                 De mentionat, coletele pentru Anglia - 1.5 £ / kg.</p>
               <a href="https://gopack-admin-dashboard.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                onclick="plaseazaComandaColet();"
                 class="btn-margin-bottom u-active-custom-color-1 u-border-2 u-border-active-custom-color-1 u-border-custom-color-1 u-border-hover-custom-color-1 u-btn u-btn-round u-button-style u-custom-item u-hover-custom-color-1 u-none u-radius-5 u-text-active-white u-text-hover-white u-text-palette-1-dark-2 u-btn-1"
                 target="_blank">Trimite Colet</a>
             </div>
@@ -375,6 +378,7 @@
               <p class="u-align-center u-text u-text-palette-5-dark-2 u-text-9"> Sugeram rezervarea platformei cu
                 minimum o saptamana inainte de data dorita.</p>
               <a href="https://gopack-admin-dashboard.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                onclick="plaseazaComandaMasina();"
                 class="btn-margin-bottom u-active-custom-color-1 u-border-2 u-border-active-custom-color-1 u-border-custom-color-1 u-border-hover-custom-color-1 u-btn u-btn-round u-button-style u-custom-item u-hover-custom-color-1 u-none u-radius-5 u-text-active-white u-text-hover-white u-text-palette-1-dark-2 u-btn-4"
                 target="_blank">Trimite masina</a>
             </div>
@@ -394,6 +398,7 @@
               <p class="u-align-center u-text u-text-palette-5-dark-2 u-text-13"> Plecarile se realizeaza zilnic /
                 saptamanal.</p>
               <a target="_blank" rel="noopener noreferrer" href="https://gopack-admin-dashboard.herokuapp.com/"
+                onclick="plaseazaComandaCalator();"
                 class="btn-margin-bottom u-active-custom-color-1 u-border-2 u-border-active-custom-color-1 u-border-custom-color-1 u-border-hover-custom-color-1 u-btn u-btn-round u-button-style u-custom-item u-hover-custom-color-1 u-none u-radius-5 u-text-active-white u-text-hover-white u-text-palette-1-dark-2 u-btn-7"
                 target="_blank">Calatoreste</a>
               <a style="display: none;" href="https://gopack-admin-dashboard.herokuapp.com/"
@@ -691,7 +696,27 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
   <script type="text/javascript">
     // Code for Facebook Pixel
     function plaseazaComanda() {
-      fbq('trackCustom', 'PlaseazaComanda', { trimite: 'plaseaza_comanda' });
+      fbq('trackCustom', 'PlaseazaComanda');
+    }
+
+    function vizionarePreturi() {
+      console.log('Vizionare Preturi')
+      fbq('trackCustom', 'VizionarePreturi');
+    }
+
+    function plaseazaComandaColet() {
+      console.log('Pleaseaza Colet')
+      fbq('trackCustom', 'PlaseazaComandaColet');
+    }
+
+    function plaseazaComandaCalator() {
+      console.log('Pleaseaza Calator')
+      fbq('trackCustom', 'PlaseazaComandaCalator');
+    }
+
+    function plaseazaComandaMasina() {
+      console.log('Pleaseaza Masina')
+      fbq('trackCustom', 'PlaseazaComandaMasina');
     }
   </script>
 </body>
