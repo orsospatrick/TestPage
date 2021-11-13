@@ -34820,7 +34820,7 @@ a.u-link.u-text-hover-grey-90:hover {
         @media (max-width: 767px) {
         h1.u-title
         {
-        font-size: 3.75rem;
+        font-size: 3rem;
         }
         }
         @media (max-width: 575px) {
@@ -34862,7 +34862,7 @@ a.u-link.u-text-hover-grey-90:hover {
         /*begin-responsive rules*/
         .u-sm h1.u-title
         {
-        font-size: 3.75rem;
+        font-size: 3rem;
         }
         .u-xs h1.u-title
         {

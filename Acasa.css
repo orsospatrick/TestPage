@@ -347,7 +347,7 @@
 }
 
 .u-section-3 .u-text-1 {
-  font-size: 3.75rem;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -508,7 +508,7 @@
 }
 
 .u-section-4 .u-text-2 {
-  font-size: 3.75rem;
+  font-size: 3rem;
   text-transform: none;
   font-weight: 400;
   margin: 27px auto 0;
@@ -1516,6 +1516,10 @@
     font-size: 3rem !important;
   }
 
+  .u-section-8 .title-text {
+    font-size: 3rem !important;
+  }
+
   .u-section-6 .u-sheet-1 {
     min-height: 499px;
   }
@@ -1532,6 +1536,10 @@
   }
 
   .u-section-7 .title-text {
+    font-size: 3rem !important;
+  }
+
+  .u-section-8 .title-text {
     font-size: 3rem !important;
   }
 
@@ -1684,6 +1692,9 @@
     font-size: 1.5rem !important;
   }
   .u-section-7 .title-text {
+    font-size: 1.5rem !important;
+  }
+    .u-section-8 .title-text {
     font-size: 1.5rem !important;
   }
   .u-section-7 .u-list-1 {
