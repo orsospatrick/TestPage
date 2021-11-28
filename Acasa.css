@@ -1714,6 +1714,19 @@
   }
 }
 
+/* SALES */
+.wrapperSale{
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 25px 30px 25px;
+  border-radius: 15px;
+  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+
 /* COOKIES ZONE */
 
 .wrapper{

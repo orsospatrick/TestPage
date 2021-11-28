@@ -189,6 +189,7 @@
         class="u-custom-font u-font-lato u-text u-text-default u-text-palette-5-dark-2 u-text-1">GOPACK</h4>
     </div>
   </header>
+
   <section class="u-clearfix u-valign-middle-lg u-white u-section-1" id="carousel_871a">
     <div class="u-clearfix u-sheet u-sheet-1">
       <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
@@ -204,7 +205,8 @@
                 </p>
                 <a id="plaseaza-comanda" onclick="plaseazaComanda()" target="_blank" rel="noopener noreferrer"
                   href="https://gopack-admin-dashboard.herokuapp.com/"
-                  class="u-active-white u-border-none u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom-color-1 u-hover-white u-radius-11 u-text-active-custom-color-1 u-text-body-alt-color u-text-hover-custom-color-1 u-btn-1">vreau transport</a>
+                  class="u-active-white u-border-none u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom-color-1 u-hover-white u-radius-11 u-text-active-custom-color-1 u-text-body-alt-color u-text-hover-custom-color-1 u-btn-1">vreau
+                  transport</a>
               </div>
             </div>
             <div class="u-container-style u-image u-layout-cell u-right-cell u-shape-rectangle u-size-34 u-image-1"
@@ -344,6 +346,12 @@
       <h4 class="u-custom-font u-font-pt-sans u-text u-text-1">
         <font color="#425465">Informatii Preturi</font>
       </h4>
+      <p style="margin-bottom: 0px; padding-bottom: 0px;">In luna  <b style="color:#ef2809; font-style: italic; "> Decembrie, </b>
+        <b style="color:#ef2809; font-style: italic; ">GoPack</b> ofera <b
+          style="color:#ef2809; font-style: italic; ">preturi reduse cu <span style="font-size: 24px;">20%</span></b>.
+      </p>
+      <p style="padding-top: 0px !important; margin-top: 0px !important;"><b style="font-style: italic; font-size: 18px;">GRABESTE-TE !</b> <b><span id="random"></span></b> persoane completeaza formularul acum. </p>
+
       <div class="u-expanded-width u-list u-list-1">
         <div class="u-repeater u-repeater-1">
           <div
@@ -354,8 +362,15 @@
                 <div class="u-container-layout u-container-layout-2">
                   <h2 class="u-text u-text-2">Colete</h2>
                   <p class="u-text u-text-3">Preturi incepand cu</p>
-                  <h1 class="u-text u-text-4"><b>€ 35</b>
-                  </h1>
+                  <div style="display: flex; flex-direction: column;">
+                    <h5
+                      style="color: white; margin: 0; padding: 0; text-decoration: line-through; text-decoration-color:#ef2809 ;"
+                      class="u-text u-text-4"><b>€ 45</b>
+                    </h5>
+                    <h1 style="font-style: italic; color: #ef2809" class="u-text u-text-4"><b>€ 35</b>
+                    </h1>
+                  </div>
+
                 </div>
               </div>
               <p class="u-align-center u-text u-text-palette-5-dark-2 u-text-5"> Pentru colete peste 30 kg - 1.3 € / kg.
@@ -374,8 +389,14 @@
                 <div class="u-container-layout u-container-layout-4">
                   <h2 class="u-text u-text-default u-text-6">Masini</h2>
                   <p class="u-text u-text-default u-text-7"> Preturi incepand cu</p>
-                  <h1 class="u-text u-text-default u-text-8"><b>€ 390</b>
-                  </h1>
+                  <div style="display: flex; flex-direction: column;">
+                    <h5
+                      style="color: white; margin: 0; padding: 0; text-decoration: line-through; text-decoration-color:#ef2809 ;"
+                      class="u-text u-text-4"><b>€ 480</b>
+                    </h5>
+                    <h1 style="font-style: italic; color: #ef2809" class="u-text u-text-4"><b>€ 390</b>
+                    </h1>
+                  </div>
                 </div>
               </div>
               <p class="u-align-center u-text u-text-palette-5-dark-2 u-text-9"> Sugeram rezervarea platformei cu
@@ -394,8 +415,14 @@
                 <div class="u-container-layout u-container-layout-6">
                   <h2 class="u-text u-text-default u-text-10">Persoane</h2>
                   <p class="u-text u-text-default u-text-11"> Preturi incepand cu</p>
-                  <h1 class="u-text u-text-default u-text-12"><b>€ 100</b>
-                  </h1>
+                  <div style="display: flex; flex-direction: column;">
+                    <h5
+                      style="color: white; margin: 0; padding: 0; text-decoration: line-through; text-decoration-color:#ef2809 ;"
+                      class="u-text u-text-4"><b>€ 130</b>
+                    </h5>
+                    <h1 style="font-style: italic; color: #ef2809;" class="u-text u-text-4"><b>€ 100</b>
+                    </h1>
+                  </div>
                 </div>
               </div>
               <p class="u-align-center u-text u-text-palette-5-dark-2 u-text-13"> Plecarile se realizeaza zilnic /
@@ -485,7 +512,8 @@
     </div>
   </section>
   <section class="u-clearfix u-grey-5 u-section-7" id="sec-5a68">
-    <h4 class="u-custom-font u-font-pt-sans u-text title-text" style="font-size: 3rem; font-weight: 400; text-align: center;">
+    <h4 class="u-custom-font u-font-pt-sans u-text title-text"
+      style="font-size: 3rem; font-weight: 400; text-align: center;">
       <font color="#425465">Intrebari frecvente.</font>
     </h4>
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
@@ -553,8 +581,8 @@
   <section class="u-clearfix u-section-9" id="sec-ca47">
     <div class="u-clearfix u-sheet u-sheet-1">
       <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout" >
-          <div class="u-layout-row" >
+        <div class="u-layout">
+          <div class="u-layout-row">
             <div
               class="u-align-center u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-white u-layout-cell-1"
               src="">
@@ -588,11 +616,11 @@
     </div>
   </section>
   <section class="u-align-center u-clearfix u-grey-5 u-section-8" id="sec-5fce">
-     <h4 class="u-custom-font u-font-pt-sans u-text title-text" style="font-size: 3rem; font-weight: 400;">
-        <font color="#425465">Apariție în presă</font>
-      </h4>
+    <h4 class="u-custom-font u-font-pt-sans u-text title-text" style="font-size: 3rem; font-weight: 400;">
+      <font color="#425465">Apariție în presă</font>
+    </h4>
     <div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-1">
-     
+
       <div class="u-expanded-width u-list u-list-1">
         <div class="u-repeater u-repeater-1">
           <div class="u-container-style u-list-item u-repeater-item">
@@ -606,8 +634,8 @@
           </div>
           <div class="u-align-center u-container-style u-list-item u-repeater-item">
             <div style="cursor: pointer;" class="u-container-layout u-similar-container u-container-layout-2">
-              <a
-                href="https://jurnalul.ro/it/stiinta/innovation-labs-2019-anunta-cele-70-de-echipe-calificate-in-accelerator-in-urma-celor-cinci-hackathoane-din-bucuresti-cluj-napoca-iasi-sibiu-si-timisoara-802942.html" target="_blank">
+              <a href="https://jurnalul.ro/it/stiinta/innovation-labs-2019-anunta-cele-70-de-echipe-calificate-in-accelerator-in-urma-celor-cinci-hackathoane-din-bucuresti-cluj-napoca-iasi-sibiu-si-timisoara-802942.html"
+                target="_blank">
                 <div class="u-image u-image-circle u-image-contain u-image-2" alt="" data-image-width="800"
                   data-image-height="555"></div>
                 <h3 class="u-align-center u-text u-text-default u-text-palette-1-dark-2 u-text-2">Jurnalul.ro</h3>
@@ -616,8 +644,8 @@
           </div>
           <div class="u-container-style u-list-item u-repeater-item">
             <div style="cursor: pointer;" class="u-container-layout u-similar-container u-container-layout-3">
-              <a
-                href="https://www.hotnews.ro/stiri-esential-24029300-gopack-finalist-changeneers-aplicatia-care-poate-scurta-timpul-asteptare-pentru-primirea-unui-colet.htm" target="_blank">
+              <a href="https://www.hotnews.ro/stiri-esential-24029300-gopack-finalist-changeneers-aplicatia-care-poate-scurta-timpul-asteptare-pentru-primirea-unui-colet.htm"
+                target="_blank">
                 <div class="u-image u-image-circle u-image-3" alt="" data-image-width="1448" data-image-height="2048">
                 </div>
                 <h3 class="u-align-center u-text u-text-default u-text-palette-1-dark-2 u-text-3">HotNews</h3>
@@ -799,6 +827,10 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
   } else {
     document.getElementById("cookieNotice").style.display = "block";
   }
+
+  document.getElementById("random").innerHTML =
+    Math.floor(Math.random() * 10) + 1;
+
 </script>
 
 </html>
