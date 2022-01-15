@@ -116,7 +116,7 @@
       color: #43A047; }*/
   .fr-view span.fr-emoticon {
     font-weight: normal;
-    font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";
+    font-family: 'Open Sans', serif;
     display: inline;
     line-height: 0; }
     .fr-view span.fr-emoticon.fr-emoticon-img {
@@ -152,7 +152,7 @@
     background-clip: padding-box;
     background: #f5f5f5;
     padding: 10px;
-    font-family: "Courier New", Courier, monospace; }
+    font-family: 'Open Sans', serif;}
   .fr-view .fr-class-transparency {
     opacity: 0.5; }
   .fr-view img {
@@ -3987,7 +3987,7 @@ span.fr-img-caption.fr-view {
 }
 /*end-commonstyles library*//*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -4079,7 +4079,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace,monospace;
+  font-family: 'Open Sans', serif;
   font-size: 1em;
 }
 hr {
@@ -17223,22 +17223,22 @@ p {
   word-break: break-all;
 }
 .u-font-arial.u-custom-font {
-  font-family: Arial, sans-serif !important;
+  font-family: 'Open Sans', serif;
 }
 .u-font-courier-new.u-custom-font {
-  font-family: 'Courier New', monospace !important;
+   font-family: 'Open Sans', serif;
 }
 .u-font-georgia.u-custom-font {
   font-family: Georgia, serif !important;
 }
 .u-font-roboto.u-custom-font {
-  font-family: Roboto, sans-serif !important;
+  font-family: 'Open Sans', serif;
 }
 .u-font-open-sans.u-custom-font {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Open Sans', serif;
 }
 .u-font-lato.u-custom-font {
-  font-family: Lato, sans-serif !important;
+  font-family: 'Open Sans', serif;
 }
 .u-font-montserrat.u-custom-font {
   font-family: Montserrat, sans-serif !important;
@@ -17256,7 +17256,7 @@ p {
   font-family: Raleway, sans-serif !important;
 }
 .u-font-pt-sans.u-custom-font {
-  font-family: 'PT Sans', sans-serif !important;
+  font-family: 'Open Sans', serif;
 }
 .u-font-ubuntu.u-custom-font {
   font-family: Ubuntu, sans-serif !important;
@@ -20026,7 +20026,7 @@ a.u-button-style.u-border-20 {
 }
 /*begin-variables font-family*/
 .u-body {
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'Open Sans', serif;
 }
 h1,
 h2,
@@ -20034,7 +20034,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Roboto,sans-serif;
+  font-family: 'Open Sans', serif;
 }
 /*end-variables font-family*/
 /*begin-variables color*/
@@ -20054,10 +20054,10 @@ h6 {
 /*end-variables color*/
 /*begin-variables font*/
 .u-custom-font.u-text-font {
-  font-family: 'Open Sans',sans-serif !important;
+  font-family: 'Open Sans', serif;
 }
 .u-custom-font.u-heading-font {
-  font-family: Roboto,sans-serif !important;
+  font-family: 'Open Sans', serif;
 }
 /*end-variables font*/
 /*begin-variables colors*/

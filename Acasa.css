@@ -24,7 +24,7 @@
   font-size: 3.75rem;
   letter-spacing: normal;
   text-transform: uppercase;
-  font-family: Lato, sans-serif;
+  font-family: 'Open Sans', serif;
   font-weight: 700;
   margin: 80px 7px 0;
 }
@@ -502,7 +502,7 @@
   letter-spacing: 6px;
   font-size: 1.25rem;
   line-height: 1.2;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'Open Sans', serif;
   font-weight: 400;
   margin: 60px 0 0;
 }
@@ -845,7 +845,7 @@
   letter-spacing: 2px;
   border-style: solid;
   font-size: 0.875rem;
-  margin: 69px auto 0;
+  margin: 128px auto 0;
   padding: 6px 46px 7px 45px;
 }
 
@@ -913,7 +913,7 @@
   letter-spacing: 2px;
   border-style: solid;
   font-size: 0.875rem;
-  margin: 69px auto 0;
+  margin: 462px auto 0;
   padding: 6px 46px 7px 45px;
 }
 
@@ -981,7 +981,7 @@
   letter-spacing: 2px;
   border-style: solid;
   font-size: 0.875rem;
-  margin: 120px auto 0;
+  margin: 435px auto 0;
   padding: 6px 46px 7px 45px;
 }
 
@@ -1032,6 +1032,14 @@
     margin-left: 0;
     margin-right: 0;
   }
+
+  .u-section-5 .u-btn-1 {
+    margin: 28px auto 0;
+  }
+
+  .u-section-5 .u-btn-4 {
+    margin: 488px auto 0;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1042,6 +1050,9 @@
   }
   .u-section-5 .btn-margin-bottom {
     margin-bottom: 18px;
+  }
+  .u-section-5 .u-btn-1 {
+    margin: 153px auto 0;
   }
 }
 
@@ -1072,6 +1083,10 @@
 
   .u-section-5 .btn-margin-bottom {
     margin-bottom: 18px;
+  }
+
+  .u-section-5 .u-btn-1 {
+    margin: 290px auto 0;
   }
 }
 
@@ -1602,7 +1617,7 @@
   font-size: 2.3rem;
   letter-spacing: normal;
   text-transform: uppercase;
-  font-family: Lato, sans-serif;
+  font-family: 'Open Sans', serif;
   font-weight: 700;
   margin: 80px 7px 0;
 }
