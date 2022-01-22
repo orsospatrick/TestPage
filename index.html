@@ -65,7 +65,7 @@
     content="Intermediem transportul de pachete, persoane din Romania in Germania,Danemarca,Franta,Italia,Olanda,Belgia,Anglia">
   <meta name="application-name" content="GoPack">
   <meta name="keywords"
-    content="gopack transport,transport persoane,transport colete,transport platforma auto,transport germania,transport romania germania,transport franta,transport romania franta,transport italia,transport romania italia,transport belgia,transport romania belgia,transport olanda,transport romania olanda,transport anglia,transport romania anglia,firme de transport germania,firme de transport,firme de transport anglia,firme de transport franta,firme de transport olanda,firme de transport belgia,firme de transport danemarca,transport romania finlanda,autocar germania,autocar franta,autocar italia,autocar anglia  ">
+    content="gopack aplicatie transport,transport colete germania,transport colete international,transport colete olanda,transport colete belgia,transport colete anglia,transport persoane germania,transport persoane olanda,transport persoane belgia,transport persoane anglia ">
   <meta name="creator" content="GoPack">
   <meta property="og:site_name" content="gopack-app" /> <!-- website name -->
   <meta property="og:site" content="https://gopack-app.com/" /> <!-- website link -->
@@ -74,7 +74,7 @@
 
   <meta property="fb:title" content="GoPack">
   <meta property="fb:description"
-    content="Intermediem transportul de pachete, persoane din Romania in Germania,Danemarca,Franta,Italia,Olanda,Belgia,Anglia">
+    content="Transport de pachete, persoane din Romania in Germania,Danemarca,Franta,Italia,Olanda,Belgia,Anglia">
   <meta property="fb:image" content="https://gopack-app.com/">
   <meta property="fb:url" content="https://gopack-app.com/">
   <meta property="fb:type" content="website" />
@@ -271,10 +271,11 @@
             <div class="u-container-layout u-valign-top u-container-layout-1">
               <h2 class="u-text u-text-default u-text-palette-1-dark-2 u-text-1">Despre Noi</h2>
               <p class="u-text u-text-palette-5-dark-2 u-text-2">
-                GoPack, platforma pentru transport de persoane, pachete sau chiar masini din România către Germania,
+                GoPack, singura solutie pentru transport de persoane, pachete sau chiar masini din România către Germania,
                 Austria, Franta, Danemarca, Italia, Olanda, Belgia, Anglia si inapoi.
-                Cu ajutorul celor mai serioși transportatori, verificați legal și comportamental pentru a asigura
+       cu cei mai serioși transportatori, verificați legal și comportamental pentru a asigura
                 promptitudinea, seriozitatea si un comportament adecvat astfel încât comanda este livrată în 2 zile.
+                Aici sunt cei mai serioși transportatori
               </p>
               <p class="u-text u-text-palette-5-dark-2 u-text-2">
                 Avem o misiune - familile si prietenii
@@ -313,7 +314,7 @@
 
       <div class="u-expanded-width u-list u-list-1">
         <div class="u-repeater u-repeater-1">
-          <div style="height: 930px;"
+          <div style="height: 930px;cursor: pointer;" onclick="window.location='https://gopack-admin-dashboard.herokuapp.com/';"
             class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-1">
             <div class="u-container-layout u-similar-container u-container-layout-1">
               <div
@@ -326,38 +327,39 @@
                       style="color: white; margin: 0; padding: 0; text-decoration: line-through; text-decoration-color:#ef2809 ;"
                       class="u-text u-text-4"><b>€ 45</b>
                     </h5> -->
-                    <h1 style="font-style: italic;" class="u-text u-text-4"><b>€ 35</b>
-                    </h1>
+                    <h3 style="font-style: italic;" class="u-text u-text-4"><b>€ 35</b>
+                    </h3>
                   </div>
 
                 </div>
               </div>
-              <div style="padding: 22px; padding-bottom: 0px;">
+              <div style="padding: 22px; padding-bottom: 0px;" >
                 <ul>
                   <li>Coletul este ridicat din <strong>Romania in zilele de miercuri, joi sau vineri</strong> iar din
                     <strong>strainatate in weekend.</strong>
                   </li>
-                  <li><strong>Regula generala</strong>. Pretul coletelor mai mari de 35 kg se stabileste in felul
+   
+                  <li><strong>Germania</strong> pretul este cuprins intre <strong>35 - 45
+                      €</strong>.</li>
+                  <li><strong>Franta</strong> pretul este de <strong>35 €</strong>.</li>
+                  <li> <strong>Danemarca</strong> pretul este de <strong>40 €</strong>.</li>
+                  <li><strong>Olanda</strong> si Belgia pretul este de <strong>45 €</strong>.
+                  </li>
+                  <li> <strong>Anglia</strong> pretul este de <strong>35 £</strong>.</li>
+                                 <li><strong>Regula generala</strong>. Pretul coletelor mai mari de 35 kg se stabileste in felul
                     urmator. <strong>1.3 €/kg sau
                       1.5 £/kg pentru Anglia.</strong></li>
-                  <li>Pentru coletele trimise in <strong>Germania</strong> pretul este cuprins intre <strong>35 - 45
-                      €</strong>.</li>
-                  <li>Pentru coletele trimise in <strong>Franta</strong> pretul este de <strong>35 €</strong>.</li>
-                  <li>Pentru coletele trimise in <strong>Danemarca</strong> pretul este de <strong>40 €</strong>.</li>
-                  <li>Pentru coletele trimise in <strong>Olanda</strong> si Belgia pretul este de <strong>45 €</strong>.
-                  </li>
-                  <li>Pentru coletele trimise in <strong>Anglia</strong> pretul este de <strong>35 £</strong>.</li>
                 </ul>
-              </div>
-              <!-- <p class="u-align-center u-text u-text-palette-5-dark-2 u-text-5"> Pentru colete peste 30 kg - 1.3 € / kg.
-                De mentionat, coletele pentru Anglia - 1.5 £ / kg.</p> -->
-              <a href="https://gopack-admin-dashboard.herokuapp.com/" id="plaseaza-comanda-colet" target="_blank"
+                   <a style="margin-bottom: 150px;"  href="https://gopack-admin-dashboard.herokuapp.com/" id="plaseaza-comanda-colet" target="_blank"
                 rel="noopener noreferrer" onclick="plaseazaComandaColet();"
                 class="btn-margin-bottom u-active-custom-color-1 u-border-2 u-border-active-custom-color-1 u-border-custom-color-1 u-border-hover-custom-color-1 u-btn u-btn-round u-button-style u-custom-item u-hover-custom-color-1 u-none u-radius-5 u-text-active-white u-text-hover-white u-text-palette-1-dark-2 u-btn-1"
                 target="_blank">Trimite Colet</a>
+              </div>
+           
+           
             </div>
           </div>
-          <div style="height: 930px;"
+          <div style="height: 930px;cursor: pointer;" onclick="window.location='https://gopack-admin-dashboard.herokuapp.com/';"
             class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white u-list-item-2">
             <div class="u-container-layout u-similar-container u-container-layout-3">
               <div
@@ -370,8 +372,8 @@
                       style="color: white; margin: 0; padding: 0; text-decoration: line-through; text-decoration-color:#ef2809 ;"
                       class="u-text u-text-4"><b>€ 480</b>
                     </h5> -->
-                    <h1 style="font-style: italic;" class="u-text u-text-4"><b>€ 100</b>
-                    </h1>
+                    <h3 style="font-style: italic;" class="u-text u-text-4"><b>€ 100</b>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -387,7 +389,7 @@
                 target="_blank">Calatoreste</a>
             </div>
           </div>
-          <div style="height: 930px;"
+          <div style="height: 930px;cursor: pointer;" onclick="window.location='https://gopack-admin-dashboard.herokuapp.com/';"
             class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white u-list-item-3">
             <div class="u-container-layout u-similar-container u-container-layout-5">
               <div
@@ -400,8 +402,8 @@
                       style="color: white; margin: 0; padding: 0; text-decoration: line-through; text-decoration-color:#ef2809 ;"
                       class="u-text u-text-4"><b>€ 130</b>
                     </h5> -->
-                    <h1 style="font-style: italic;" class="u-text u-text-4"><b>€ 390</b>
-                    </h1>
+                    <h3 style="font-style: italic;" class="u-text u-text-4"><b>€ 390</b>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -488,22 +490,22 @@
         <div class="u-repeater u-repeater-1">
           <div class="u-align-center u-container-style u-list-item u-repeater-item">
             <div class="u-container-layout u-similar-container u-container-layout-2">
-              <h1 class="u-text u-text-palette-1-dark-2 u-title u-text-3" data-animation-name="counter"
-                data-animation-event="scroll" data-animation-duration="3000">21</h1>
+              <h3 class="u-text u-text-palette-1-dark-2 u-title u-text-3" data-animation-name="counter"
+                data-animation-event="scroll" data-animation-duration="3000">21</h3>
               <p class="u-text u-text-palette-5-dark-2 u-text-4">Transportatori disponibili</p>
             </div>
           </div>
           <div class="u-align-center u-container-style u-list-item u-repeater-item">
             <div class="u-container-layout u-similar-container u-container-layout-3">
-              <h1 class="u-text u-text-palette-1-dark-2 u-title u-text-5" data-animation-name="counter"
-                data-animation-event="scroll" data-animation-duration="3000">20000+</h1>
-              <p class="u-text u-text-palette-5-dark-2 u-text-6">Colete transportate</p>
+              <h3 class="u-text u-text-palette-1-dark-2 u-title u-text-5" data-animation-name="counter"
+                data-animation-event="scroll" data-animation-duration="3000">20000+</h3>
+              <p class="u-text u-text-palette-5-dark-2 u-text-6">Clienti fericiti</p>
             </div>
           </div>
           <div class="u-align-center u-container-style u-list-item u-repeater-item">
             <div class="u-container-layout u-similar-container u-container-layout-4">
-              <h1 class="u-text u-text-palette-1-dark-2 u-title u-text-7" data-animation-name="counter"
-                data-animation-event="scroll" data-animation-duration="3000">10+</h1>
+              <h3 class="u-text u-text-palette-1-dark-2 u-title u-text-7" data-animation-name="counter"
+                data-animation-event="scroll" data-animation-duration="3000">10+</h3>
               <p class="u-text u-text-palette-5-dark-2 u-text-8">Tari in care activam</p>
             </div>
           </div>
