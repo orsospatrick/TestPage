@@ -278,12 +278,15 @@
                   transport</a>
               </div>
             </div>
-            <video class="u-container-style u-image u-layout-cell u-right-cell u-shape-rectangle u-size-34 u-image-1"
-              id="background-video" controls autoplay loop muted poster="./images/gopack-recenzie.mp4" preload="auto" controls>
+           
+   <video onclick="set()" class="u-container-style u-image u-layout-cell u-right-cell u-shape-rectangle u-size-34 u-image-1"
+              id="background-video" controls autoplay loop muted=false poster="./images/gopack-recenzie.mp4" preload="auto" controls>
               <source src="./images/gopack-recenzie.mp4"
                 type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            
+         
             <div class="u-container-layout u-container-layout-2"></div>
           </div>
         </div>
@@ -933,6 +936,16 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
   } else {
     document.getElementById("cookieNotice").style.display = "block";
   }
+ 
+    var v = document.getElementById(
+          "background-video");
+  
+        function set() {
+            v.muted = false;
+        }
+
+
+
 
 </script>
 
