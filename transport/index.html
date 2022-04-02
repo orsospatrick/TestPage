@@ -140,20 +140,21 @@
         </div>
       </nav>
       <h1 style="letter-spacing: 3px;"
-        class="u-custom-font u-font-lato u-text u-text-default u-text-palette-5-dark-2 u-text-1">Tări și orașe acoperite</h1>
+        class="u-custom-font u-font-lato u-text u-text-default u-text-palette-5-dark-2 u-text-1">GO PACK</h1>
     </div>
   </header>
   <section
     class="u-align-center-lg u-align-center-md u-align-center-xl u-align-left-sm u-align-left-xs u-clearfix u-section-1"
     data-image-width="2000" data-image-height="1333" id="sec-4e55">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-      <h2 class="u-text u-text-default u-text-1">Transporta colete, masini sau persoane</h2>
-      <p class="u-text u-text-2"> Cauti firme de transport sau plecari cu autocarul? Ei bine, noi suntem cea mai buna
-        solutie de transport in acest moment, inovand industria transportului de persoane si pachete cu micile firme de
-        transport care tranziteaza Romania si Europa. Suntem singura firma de transport cu o aplicatie care incearca sa
-        uneasca toti transportatorii seriosi si sa ofere o solutie optima pentru toate persoanele plecate in
-        strainatate.</p>
-      <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+      <h1 class="u-text u-text-default u-text-1">Orase principale in care transportam colete</h1>
+      <p class="u-text u-text-2"> Doresti sa stii daca ajungem in orasul tau? Ei bine GoPack ofera transport international de colete din Romania in Germania,Olanda si Belgia, precum si in Anglia in toate orasele de mai jos, dar totodata ne deplasam si pe o raza de 150 km de la acele orase.<br> Daca doresti sa trimiti un colet celor dragi nu uita sa mergi in sectiunea contact si sa ne contactezi sau sa completezi forumarul de pe site.</p>
+      
+      <div style="margin-left: 100px;" class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+          <a id="plaseaza-comanda" onclick="plaseazaComanda()" target="_blank" rel="noopener noreferrer"
+                  href="https://gopack-admin-dashboard.herokuapp.com/"
+                  class="u-active-white u-border-none u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom-color-1 u-hover-white u-radius-11 u-text-active-custom-color-1 u-text-body-alt-color u-text-hover-custom-color-1 u-btn-1">vreau
+                  transport</a>
         <div class="u-gutter-0 u-layout">
           <div class="u-layout-row">
             <div class="u-size-20 u-size-30-md">
@@ -1943,6 +1944,44 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
       </a>
     </div>
   </footer>
+    <script type="text/javascript">
+    // Code for Facebook Pixel
+    function plaseazaComanda() {
+      fbq('track', 'Purchase', {
+        value: 1,
+        currency: 'EUR'
+      })
+      fbq('trackCustom', 'PlaseazaComanda');
+    }
+
+    function vizionarePreturi() {
+      fbq('trackCustom', 'VizionarePreturi');
+    }
+
+    function plaseazaComandaColet() {
+      fbq('track', 'Purchase', {
+        value: 1,
+        currency: 'EUR'
+      })
+      fbq('trackCustom', 'PlaseazaComandaColet');
+    }
+
+    function plaseazaComandaCalator() {
+      fbq('track', 'Purchase', {
+        value: 1,
+        currency: 'EUR'
+      })
+      fbq('trackCustom', 'PlaseazaComandaCalator');
+    }
+
+    function plaseazaComandaMasina() {
+      fbq('track', 'Purchase', {
+        value: 1,
+        currency: 'EUR'
+      })
+      fbq('trackCustom', 'PlaseazaComandaMasina');
+    }
+  </script>
 </body>
 <script>
   function showIntermediateCities(divNumber) {
