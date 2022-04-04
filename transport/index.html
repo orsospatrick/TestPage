@@ -230,7 +230,8 @@
       <h3 class="u-text u-text-default u-text-1">Romania - Germania</h3>
       <p class="u-custom-font u-font-pt-sans u-text u-text-default u-text-2">Pentru ruta Romania - Germania urmatoarele
         orase principale sunt acoperite.</p>
-      <div id="toscroll" class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1" style="padding-left: 33px;">
+      <div id="toscroll" class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1"
+        style="padding-left: 33px;">
         <div class="u-layout citiesWrapper" style="display: flex; flex-direction: row;">
           <div style="display: flex; flex-direction: column; padding-left:18px; padding-right: 18px;"
             class="u-layout-row">
@@ -1988,15 +1989,17 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
 <script>
   function showIntermediateCities(divNumber) {
     var x = document.getElementById(`intermediateCitiesDiv${divNumber}`);
-   
+
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
     }
   }
-  function showArea(divNumber) {
-    window.scrollTo(0, document.body.scrollHeight);
+  function showArea(divNumber, first) {
+    if (!first) {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
     var xDiv = document.getElementById(`areaDiv${divNumber}`);
     var x1 = document.getElementById(`areaDiv${1}`);
     var x2 = document.getElementById(`areaDiv${2}`);
@@ -2015,7 +2018,7 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
     xDiv.style.display = "block";
     xDiv.style.paddingBottom = "32px";
   }
-  showArea(1)
+  showArea(1, true)
 </script>
 
 </html>
