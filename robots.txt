@@ -1,4 +1,0 @@
-Sitemap: https://gopack-app.com/sitemap.xml
-User-Agent: *
-Allow: /
-
