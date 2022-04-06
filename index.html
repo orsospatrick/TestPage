@@ -182,7 +182,7 @@
 
 <body data-home-page="/" data-home-page-title="index" class="u-body">
   <header class="u-clearfix u-header u-header" id="sec-cc6a">
-    <a href="tel:+40767503706" class="float">
+    <a onclick="plaseazaComandaTelefonic()" href="tel:+40767503706" class="float">
       <div style="padding: 6px;">
         <span style="font-size: 12px;color:#FFF">Rezervare</span>
         <span style="font-size: 12px;color:#FFF">+40767503706</span>
@@ -935,6 +935,14 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
         currency: 'EUR'
       })
       fbq('trackCustom', 'PlaseazaComandaMasina');
+    }
+
+    function plaseazaComandaTelefonic() {
+      fbq('track', 'Purchase', {
+        value: 1,
+        currency: 'EUR'
+      })
+      fbq('trackCustom', 'PlaseazaComandaTelefonic');
     }
   </script>
 </body>
